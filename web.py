@@ -8,11 +8,13 @@ def add_todo():
     todos.append(todo)
     functions.write_todos(todos)
 
+st.set_page_config(layout="wide")
 
 st.title('My Todo App')
 st.subheader('This is my Todo App')
 st.write('this app is to increase your productivity')
 
+# checking commits
 
 for index, a in enumerate(todos):
     checkbox = st.checkbox(a, key=a)
